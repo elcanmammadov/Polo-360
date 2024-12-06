@@ -1,0 +1,246 @@
+header {
+  background: linear-gradient(#d8d8d8, #fff, #fff, #fff, #fff);
+  text-align: center;
+  padding: 35px 0 25px 0;
+}
+#logo img {
+  width: 50%;
+}
+menu li {
+  font: 0.7em Tahoma, sans-serif;
+  color: #b7b7b7;
+  padding: 0 10px 7px 10px;
+}
+menu li a {
+  display: block;
+  font: bold 0.9rem Georgia, serif;
+  color: #666;
+  text-transform: uppercase;
+}
+main {
+  background: url("../img/mainbg.jpg") repeat-x;
+  padding: 20px 0 0 0;
+}
+#slider {
+  height: 345px;
+  border: 1px solid #c6c6c6;
+  border-radius: 8px;
+  background: url("../img/slider1.jpg") center/cover;
+  box-shadow: 0 5px 10px #aaa;
+}
+h1 {
+  font: bold 1.5em Georgia, serif;
+  color: #000;
+  text-align: center;
+  padding: 20px 0 14px 0;
+}
+h2 {
+  font: 1.3em Georgia;
+  color: #11719e;
+}
+h3 {
+  font: bold 1.2em Georgia, serif;
+  color: #444;
+  padding: 6px 0;
+  border-bottom: 1px dashed #d3d3d3;
+}
+h4 {
+  font: bold 1.2em Georgia, serif;
+  color: #444;
+  padding: 6px 0;
+  border-bottom: 1px dashed #d3d3d3;
+}
+h6 {
+  font: 0.75em Helvetica;
+  color: #8c8c8c;
+}
+hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+.row {
+  padding: 20px 0;
+}
+.col {
+  padding: 12px 10px;
+}
+.col p {
+  padding: 10px 0;
+}
+.row article p {
+  font: 0.8em/1.5 Helvetica, sans-serif;
+  color: #3e3e3e;
+}
+.row article img {
+  width: 100%;
+  padding: 7px;
+  margin: 18px 0;
+  border: 1px solid #e1e1e1;
+  text-align: left;
+  border-radius: 4px;
+}
+.btn {
+  display: inline-block;
+  width: 163px;
+  padding: 8px 13px;
+  margin: 20px 0;
+  text-align: left;
+  border-radius: 4px;
+}
+.btn span {
+  float: right;
+}
+.btn1 {
+  border: 1px solid #d8d8d8;
+  font: 0.75em Helvetica, sans-serif;
+  color: #016999;
+  background: linear-gradient(to right, #e8e8e8, #f7f7f7, #e8e8e8, #eee);
+}
+.btn2 {
+  border: 1px solid #004a80;
+  font: 0.75em Georgia, serif;
+  color: white;
+  background: linear-gradient(to right, #31669b, #4b83bd, #326598, #306193);
+}
+form input {
+  margin-top: 15px;
+  padding: 15px 30px;
+}
+form textarea {
+  width: 60%;
+  padding: 5px 35px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-style: italic;
+}
+#icons1,
+#icons2 {
+  padding: 7px 0;
+}
+#icons1 a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  margin: 3px;
+  box-shadow: 1px 1px 3px #333;
+  background-image: url("../img/icons.png");
+}
+#icons1 a:first-child {
+  margin-left: 0;
+}
+#icons1 a:last-child {
+  margin-right: 0;
+}
+#rss {
+  background-position: 0 0;
+}
+#fab {
+  background-position: -50px 0;
+}
+#lin {
+  background-position: -100px 0;
+}
+#ytb {
+  background-position: -150px 0;
+}
+#twi {
+  background-position: -200px 0;
+}
+#rss:hover {
+  background-position: 0 -50px;
+}
+#fab:hover {
+  background-position: -50px -50px;
+}
+#lin:hover {
+  background-position: -100px -50px;
+}
+#ytb:hover {
+  background-position: -150px -50px;
+}
+#twi:hover {
+  background-position: -200px -50px;
+}
+
+.update {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  border-bottom: 1px dashed #d3d3d3;
+}
+.update a img {
+  width: 60px;
+}
+
+.update p {
+  line-height: 1.5;
+  color: #333;
+}
+footer {
+  font: 300 1em/2 Helvetica, sans-serif;
+  background: #333;
+  border-top: 10px solid #4c4c4c;
+  color: #999;
+}
+footer a {
+  display: inline-block;
+  color: #999;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 940px;
+    margin: auto;
+  }
+  header {
+    text-align: initial;
+  }
+  #logo img {
+    width: 25%;
+  }
+  menu {
+    float: right;
+    padding: 22px 0 0 0;
+  }
+  menu li {
+    display: inline-block;
+    border-left: 1px dotted #d6d6d6;
+  }
+  .row::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+  .col {
+    width: 33.33%;
+    float: left;
+  }
+  form input {
+    padding: 5px 35px;
+    width: 80%;
+  }
+  form textarea {
+    width: 80%;
+    padding: 5px 35px;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+  footer .col {
+    width: 40%;
+    padding: 5px 0 80px 0;
+    margin: 0 0 0 0;
+  }
+  footer .col1 {
+    text-align: right;
+    margin-left: 18%;
+  }
+}
