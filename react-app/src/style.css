@@ -34,15 +34,15 @@ img {
 header {
   background: linear-gradient(#f4f4f4, #fff, #fff, #fff, #fff);
   border-bottom: 1px solid #e6e6e6;
-  text-align: center;
-  padding: 22px 0;
+  padding: 14px 0;
 }
 #logo {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 }
 #logo img {
-  width: 180px;
-  max-width: 55%;
+  width: 140px;
+  max-width: 100%;
 }
 menu li {
   font: 0.7em Tahoma, sans-serif;
@@ -263,14 +263,15 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   padding: 0;
-  margin: 10px auto 0 auto;
+  margin: 0;
   background: none;
   border: 1px solid #d8d8d8;
   border-radius: 4px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 #menuToggle span {
   display: block;
@@ -289,12 +290,16 @@ footer a:hover {
   transform: translateY(-7px) rotate(-45deg);
 }
 menu#mainMenu {
+  width: 100%;
+  order: 3;
   max-height: 0;
   overflow: hidden;
+  text-align: center;
   transition: max-height 0.25s ease;
 }
 menu#mainMenu.open {
   max-height: 300px;
+  margin-top: 14px;
 }
 
 .form-message {
@@ -341,11 +346,22 @@ menu#mainMenu.open {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  header nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #menuToggle {
     display: none;
   }
   menu#mainMenu {
+    width: auto;
+    order: initial;
     max-height: none;
     overflow: visible;
   }
